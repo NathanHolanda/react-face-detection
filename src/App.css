@@ -1,0 +1,42 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mosaic{
+  box-sizing: border-box;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 10px;
+  gap: 10px
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+img.face{
+  border: 8px solid #080;
+}
+
+img.not-a-face{
+  border: 8px solid #800;
+}
+
+button{
+  cursor: pointer;
+  border: 3px #008 solid;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #008;
+  padding: 8px 10px;
+  margin-top: 20px;
+}
